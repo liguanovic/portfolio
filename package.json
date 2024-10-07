@@ -1,6 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://liguanovic.github.io/portfolio",
+  "repository": "github:liguanovic/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
