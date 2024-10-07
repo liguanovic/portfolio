@@ -1,15 +1,16 @@
 import React from 'react';
-import './App.css';
+import Nav from './components/Nav/nav';
+import Footer from './components/Footer/footer';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
     <React.StrictMode>
       <BrowserRouter>
-        {/* <Nav /> */}
+        <Nav />
 
 
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </React.StrictMode>
   );

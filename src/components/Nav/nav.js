@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 // import logo from '../../logo.svg';
-import 'nav.css';
+import './nav.css';
 
-function Nav() {
+const Nav = () => {
     return (
         <nav>
             {/* <figure>
@@ -12,9 +12,8 @@ function Nav() {
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
                 <Link href="/portfolio">Portfolio</Link>
-                <Link href="/contact">Contact</Link>
             </ul>
-            <button>Contact Me</button>
+            <button><span><i className="fa-solid fa-envelope"></i></span>Contact Me</button>
         </nav>
     );
 }
