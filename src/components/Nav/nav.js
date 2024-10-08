@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 // import logo from '../../logo.svg';
 import './nav.css';
 
@@ -9,11 +9,12 @@ const Nav = () => {
                 <img>{logo}</img>
             </figure> */}
             <ul>
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/portfolio">Portfolio</Link>
+                <li> <a href="/">Home</a></li>
+                <li> <a href="#skills">About</a></li>
+                <li> <a href="/portfolio">Portfolio</a></li>
             </ul>
-            <button><span><i className="fa-solid fa-envelope"></i></span>Contact Me</button>
+            <button className="buttonDesktop"><span><i className="fa-solid fa-envelope"></i></span>Contact Me</button>
+            <button className="buttonMobile"><i className="fa-solid fa-envelope"></i></button>
         </nav>
     );
 }

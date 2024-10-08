@@ -15,30 +15,45 @@ nav {
 nav ul {
     display: flex;
     color: white;
-    cursor: pointer;
     font-weight: bold;
     flex-grow: 1;
     justify-content: center;
-}
-
-nav ul a {
+    padding: 0;
+    /* Enlève le padding par défaut */
+    margin: 0;
+    /* Enlève la marge par défaut */
     list-style: none;
+    /* Enlève les puces de liste */
+}
+
+nav ul li {
     margin: 0 1.5rem;
+    /* Espace entre les éléments de la liste */
+}
+
+nav ul li a {
+    color: white;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Enlève le soulignement des liens */
     padding-bottom: 0.5rem;
-    font-size: 1rem;
+    /* Espace en bas du lien */
     border-bottom: 3px solid transparent;
+    /* Bordure en bas initialement transparente */
 }
 
-nav ul a:hover {
+nav ul li a:hover {
     color: rgb(250, 190, 38);
-    padding-bottom: 0.5rem;
+    /* Couleur au survol */
     border-bottom: 3px solid rgb(250, 190, 38);
+    /* Bordure au survol */
 }
 
-nav ul a:active {
+nav ul li a:active {
     color: rgb(250, 190, 38);
-    padding-bottom: 0.5rem;
+    /* Couleur lorsque l'élément est actif */
     border-bottom: 3px solid rgb(250, 190, 38);
+    /* Bordure lorsque l'élément est actif */
 }
 
 button {
@@ -54,6 +69,7 @@ button {
     font-weight: bold;
     font-size: 1rem;
     width: 160px;
+    color: rgb(30, 30, 30);
 }
 
 button:hover {
@@ -63,4 +79,24 @@ button:hover {
 button span {
     margin-right: 10px;
     font-size: 1.2rem;
+}
+
+.buttonMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .buttonDesktop {
+        display: none;
+        /* Masque le bouton pour les écrans mobiles */
+    }
+
+    .buttonMobile {
+        display: flex;
+        /* Affiche le bouton mobile */
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 30px;
+    }
 }

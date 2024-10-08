@@ -1,0 +1,109 @@
+{
+  "presentation": "Je maîtrise HTML et CSS, avec une spécialisation en balisage sémantique et design responsive. Je possède des compétences en JavaScript, incluant la programmation asynchrone et la manipulation du DOM pour créer des interfaces interactives. J'utilise React pour concevoir des composants réutilisables et gérer l'état avec React Redux, garantissant des applications performantes. De plus, j'utilise Figma pour élaborer des designs UI/UX élégants, assurant une expérience utilisateur optimale.",
+
+    "competences": [
+        {
+            "titre": "HTML/CSS",
+            "logo": "htmlCssLogo",
+            "texteAlternatif": "Logo HTML et CSS",
+            "listeCompetences": [
+              {
+                "description": "Maîtrise du",
+                "miseEnValeur": "balisage HTML sémantique",
+                "contexte": "pour garantir l'accessibilité."
+              },
+              {
+                "description": "Compétent en",
+                "miseEnValeur": "requêtes média CSS",
+                "contexte": "pour la conception responsive."
+              },
+              {
+                "description": " Compétent en",
+                "miseEnValeur": "Optimisation SEO",
+                "contexte": "pour améliorer le classement dans les résultats de recherche et le SEO naturel."
+              },
+              {
+                "description": " Compétent en",
+                "miseEnValeur": "SASS",
+                "contexte": "pour l'utilisation de variables et de mixins, rendant le CSS plus maintenable."
+              }
+            ]
+          },
+      {
+        "titre": "React",
+        "logo": "reactLogo",
+        "texteAlternatif": "Logo React",
+        "listeCompetences": [
+          {
+            "description": "Maîtrise des",
+            "miseEnValeur": "React Hooks",
+            "contexte": "pour une gestion efficace de l'état."
+          },
+          {
+            "description": "Compétent en",
+            "miseEnValeur": "Création de composants réutilisables",
+            "contexte": "pour optimiser la maintenabilité et la lisibilité du code."
+          },
+          {
+            "description": "Expérimenté en",
+            "miseEnValeur": "récupération de données d'API",
+            "contexte": " en intégrant des données dynamiques dans les applications."
+          },
+          {
+            "description": "Familiarisé avec",
+            "miseEnValeur": "React Redux",
+            "contexte": "pour la gestion d'état centralisée."
+          }
+        ]
+      },
+      {
+        "titre": "JavaScript",
+        "logo": "javaScriptLogo",
+        "texteAlternatif": "Logo JavaScript",
+        "listeCompetences": [
+          {
+            "description": "Capacité à",
+            "miseEnValeur": "manipuler le DOM",
+            "contexte": "pour créer des interfaces interactives."
+          },
+          {
+            "description": "Expérience en",
+            "miseEnValeur": "programmation asynchrone",
+            "contexte": "pour la récupération efficace de données."
+          },
+          {
+            "description": "Capacité à",
+            "miseEnValeur": "gérer les événements utilisateur",
+            "contexte": "pour améliorer l'interactivité des applications."
+          }
+        ]
+      },
+      {
+        "titre": "Figma",
+        "logo": "figmaLogo",
+        "texteAlternatif": "Logo Figma",
+        "listeCompetences": [
+          {
+            "miseEnValeur": "Expertise en design UI/UX",
+            "contexte": "pour la création d'interfaces utilisateur attrayantes et fonctionnelles."
+          },
+          {
+            "description": "Compétent en",
+            "miseEnValeur": "SharedPreferences",
+            "contexte": "pour la fonctionnalité hors ligne."
+          },
+          {
+            "description": "Expertise dans",
+            "miseEnValeur": "la conversion de maquettes Figma",
+            "contexte": "en prototypes fonctionnels et interactifs."
+          },
+          {
+            "description": "Aptitude à",
+            "miseEnValeur": "collaborer avec les développeurs",
+            "contexte": "pour garantir une intégration harmonieuse des designs."
+          }
+        ]
+      }
+    ]
+  }
+  
