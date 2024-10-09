@@ -10,6 +10,7 @@ nav {
     position: sticky;
     top: 0;
     width: 100vw;
+    z-index: 10;
 }
 
 nav ul {
@@ -19,44 +20,37 @@ nav ul {
     flex-grow: 1;
     justify-content: center;
     padding: 0;
-    /* Enlève le padding par défaut */
     margin: 0;
-    /* Enlève la marge par défaut */
     list-style: none;
-    /* Enlève les puces de liste */
 }
 
 nav ul li {
     margin: 0 1.5rem;
-    /* Espace entre les éléments de la liste */
 }
 
-nav ul li a {
+nav ul li .scrollLink {
     color: white;
-    /* Couleur du texte */
     text-decoration: none;
-    /* Enlève le soulignement des liens */
     padding-bottom: 0.5rem;
-    /* Espace en bas du lien */
     border-bottom: 3px solid transparent;
-    /* Bordure en bas initialement transparente */
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-nav ul li a:hover {
+/* Modifier ici pour cibler les hover */
+nav ul li .scrollLink:hover {
     color: rgb(250, 190, 38);
-    /* Couleur au survol */
     border-bottom: 3px solid rgb(250, 190, 38);
-    /* Bordure au survol */
 }
 
-nav ul li a:active {
+/* Modifier ici pour cibler la classe active */
+nav ul li .scrollLink.active {
     color: rgb(250, 190, 38);
-    /* Couleur lorsque l'élément est actif */
     border-bottom: 3px solid rgb(250, 190, 38);
-    /* Bordure lorsque l'élément est actif */
 }
 
-button {
+
+.buttonDesktop,
+.buttonMobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,11 +66,12 @@ button {
     color: rgb(30, 30, 30);
 }
 
-button:hover {
+.buttonDesktop:hover,
+.buttonMobile:hover {
     background: rgb(250, 190, 38);
 }
 
-button span {
+.buttonDesktop span {
     margin-right: 10px;
     font-size: 1.2rem;
 }
@@ -88,12 +83,10 @@ button span {
 @media (max-width: 768px) {
     .buttonDesktop {
         display: none;
-        /* Masque le bouton pour les écrans mobiles */
     }
 
     .buttonMobile {
         display: flex;
-        /* Affiche le bouton mobile */
         justify-content: center;
         align-items: center;
         width: 50px;

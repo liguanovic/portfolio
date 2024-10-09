@@ -1,0 +1,82 @@
+[id="form"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+    width: 100vw;
+    height: 90vh;
+    max-width: 60rem;
+    padding: 1rem;
+}
+
+[id="form"] h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+[id="form"] p {
+    max-width: 52rem;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+[id="form"] form {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+[id="form"] form input,
+[id="form"] form textarea {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(40, 40, 40);
+    resize: none;
+}
+
+[id="form"] fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 40rem;
+}
+
+[id="form"] .send-btn {
+    font-size: 1rem;
+    background: white;
+    color: rgb(40, 40, 40);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+[id="form"] .send-btn:hover {
+    background: rgb(250, 190, 38);
+    opacity: 0.8;
+}
+
+[id="form"] .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}

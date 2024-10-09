@@ -23,13 +23,17 @@ const Skills = ({ competences }) => {
             <section>
                 {competences.map((competence, index) => (
                     <article key={index}>
-                        <img src={logos[competence.titre]} alt={competence.texteAlternatif} />
-                        <h2>{competence.titre}</h2>
-                        <ul>
-                            {competence.listeCompetences.map((item, idx) => (
-                                <li key={idx}>{item.description} {item.miseEnValeur && <strong>{item.miseEnValeur}</strong>} {item.contexte}</li>
-                            ))}
-                        </ul>
+                        <figure>
+                            <img src={logos[competence.titre]} alt={competence.texteAlternatif} />
+                        </figure>
+                        <section>
+                            <h2>{competence.titre}</h2>
+                            <ul>
+                                {competence.listeCompetences.map((item, idx) => (
+                                    <li key={idx}>{item.description} {item.miseEnValeur && <strong>{item.miseEnValeur}</strong>} {item.contexte}</li>
+                                ))}
+                            </ul>
+                        </section>
                     </article>
                 ))}
             </section>

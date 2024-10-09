@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: auto;
 }
 
 [id=skills] header {
@@ -16,6 +16,7 @@
 }
 
 [id=skills] section article {
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -40,6 +41,11 @@
     height: 4rem;
     width: 4rem;
     margin-right: 2rem;
+    transition: transform 0.3s ease;
+}
+
+[id=skills] img:hover {
+    transform: scale(1.4);
 }
 
 [id=skills] p {
@@ -56,8 +62,32 @@
     line-height: 1.75rem;
 }
 
+@media (max-width: 1200px) {
+    [id=skills] {
+        margin: auto;
+    }
+}
+
 @media (max-width: 768px) {
+    [id=skills] {
+        margin: auto;
+    }
+
     [id=skills] header {
         text-align: start;
+    }
+
+    [id=skills] section article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    [id=skills] img {
+        margin-right: 0;
+    }
+
+    [id=skills] h2 {
+        text-align: center;
     }
 }

@@ -1,20 +1,53 @@
-
-// import logo from '../../logo.svg';
+import { Link } from 'react-scroll';
 import './nav.css';
 
 const Nav = () => {
     return (
         <nav>
-            {/* <figure>
-                <img>{logo}</img>
-            </figure> */}
             <ul>
-                <li> <a href="/">Home</a></li>
-                <li> <a href="#skills">About</a></li>
-                <li> <a href="/portfolio">Portfolio</a></li>
+                <li>
+                    <Link
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        activeClass="active"
+                        className="scrollLink"
+                    >
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        activeClass="active"
+                        className="scrollLink"
+                    >
+                        About
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        activeClass="active"
+                        className="scrollLink"
+                    >
+                        Portfolio
+                    </Link>
+                </li>
             </ul>
-            <button className="buttonDesktop"><span><i className="fa-solid fa-envelope"></i></span>Contact Me</button>
-            <button className="buttonMobile"><i className="fa-solid fa-envelope"></i></button>
+            <a href="#form" className="buttonDesktop" aria-label="Contact Me">
+                <span><i className="fa-solid fa-envelope"></i></span>Contact Me
+            </a>
+            <a href="#form" className="buttonMobile" aria-label="Contact Me">
+                <i className="fa-solid fa-envelope"></i>
+            </a>
         </nav>
     );
 }

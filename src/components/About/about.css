@@ -1,6 +1,6 @@
 [id="about"] {
-    height: 50vh;
-    width: 100vh;
+    max-width: 950px;
+    height: 100vh;
     padding: 2rem;
     margin: auto;
     font-size: 2rem;
@@ -29,10 +29,19 @@
     line-height: 1.6;
 }
 
+@media (max-width: 1024px) {
+    [id="about"] {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+}
+
 @media (max-width: 768px) {
     [id="about"] {
         width: 90%;
         height: auto;
+        margin: auto;
         padding: 0 20px;
     }
 
