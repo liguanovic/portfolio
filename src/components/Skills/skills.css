@@ -90,4 +90,9 @@
     [id=skills] h2 {
         text-align: center;
     }
+
+    [id=skills] p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }

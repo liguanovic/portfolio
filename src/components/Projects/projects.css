@@ -166,12 +166,15 @@
     animation: shake 0.5s ease-in-out;
 }
 
+.works article:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
 
 @media (max-width: 1020px) {
     [id="projects"] .works article {
         width: calc(100% - 1.3rem);
-        margin-right: 0;
-        margin: 0 1rem;
+        margin: 0 3rem;
     }
 
     [id="projects"] figure {
