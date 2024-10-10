@@ -36,13 +36,11 @@ nav ul li .scrollLink {
     transition: color 0.3s, border-bottom 0.3s;
 }
 
-/* Modifier ici pour cibler les hover */
 nav ul li .scrollLink:hover {
     color: rgb(250, 190, 38);
     border-bottom: 3px solid rgb(250, 190, 38);
 }
 
-/* Modifier ici pour cibler la classe active */
 nav ul li .scrollLink.active {
     color: rgb(250, 190, 38);
     border-bottom: 3px solid rgb(250, 190, 38);
