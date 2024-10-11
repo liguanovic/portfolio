@@ -11,11 +11,11 @@ const Home = () => {
     return (
         <main id="home">
 
-            <div class="loader">
-                <div class="loader__items">
-                    <div class="loader__item loader__item--1"></div>
-                    <div class="loader__item loader__item--2"></div>
-                    <div class="loader__item loader__item--3"></div>
+            <div className="loader">
+                <div className="loader__items">
+                    <div className="loader__item loader__item--1"></div>
+                    <div className="loader__item loader__item--2"></div>
+                    <div className="loader__item loader__item--3"></div>
                 </div>
             </div>
 

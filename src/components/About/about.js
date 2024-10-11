@@ -4,7 +4,6 @@ import './about.css';
 const About = () => {
     return (
         <section id="about">
-            <span>Bonjour, </span>
             <h1>Kévin
                 <br />
                 Frontend developer
