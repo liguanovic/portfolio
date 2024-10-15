@@ -35,3 +35,13 @@ footer i {
         gap: 20px;
     }
 }
+
+@media (min-width: 1536px) {
+    footer {
+        font-size: 1.5rem;
+    }
+
+    footer ul li i {
+        font-size: 2rem;
+    }
+}

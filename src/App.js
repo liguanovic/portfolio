@@ -1,17 +1,23 @@
 import React from 'react';
+import Loader from './components/Loader/loader';
 import Nav from './components/Nav/nav';
-import Home from './Page/Home/home';
+import About from './components/About/about';
+import Skills from './components/Skills/skills';
+import Projects from './components/Projects/projects';
+import Form from './components/Form/form';
+import Data from './Data/data.json';
 import Footer from './components/Footer/footer';
-import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <React.StrictMode>
-      <BrowserRouter basename='/portfolio'>
-        <Nav />
-        <Home />
-        <Footer />
-      </BrowserRouter>
+    <React.StrictMode basename='/portfolio'>
+      <Loader />
+      <Nav />
+      <About />
+      <Skills competences={Data.competences} />
+      <Projects />
+      <Form />
+      <Footer />
     </React.StrictMode>
   );
 }

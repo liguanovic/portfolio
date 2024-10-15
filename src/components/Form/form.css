@@ -80,3 +80,29 @@
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+
+@media (min-width: 1536px) {
+    [id="form"] {
+        max-width: 1530px;
+    }
+
+    [id="form"] h1 {
+        font-size: 4rem;
+    }
+
+    [id="form"] p {
+        font-size: 1.5rem;
+    }
+
+    [id="form"] form input,
+    [id="form"] form textarea,
+    [id="form"] fieldset {
+        font-size: 1.5rem;
+        max-width: 1530px;
+    }
+
+    [id="form"] .send-btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}

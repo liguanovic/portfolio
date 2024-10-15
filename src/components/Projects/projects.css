@@ -31,7 +31,6 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    width: 200px;
     height: 40px;
 }
 
@@ -55,7 +54,7 @@
     padding: 2rem;
 }
 
-[id="projects"] section p {
+[id="projects"] article p {
     color: black;
     margin: 1rem 0 0;
     font-weight: 300;
@@ -70,17 +69,14 @@
     object-fit: contain;
 }
 
-[id="projects"] .works article {
+[id="projects"] .works a {
     width: calc(35% - 1.3rem);
     padding: 3rem;
     border: 3px solid rgb(250, 190, 38);
     border-radius: 0.3rem;
     position: relative;
     min-height: 280px;
-}
-
-[id="projects"] .works article a:hover {
-    background-color: rgb(250, 190, 38);
+    background-color: white;
 }
 
 [id="projects"] .githubIcon {
@@ -103,7 +99,6 @@
     padding: 0;
     list-style: none;
 }
-
 
 [id="projects"] .langagesBox {
     background-color: #f0f0f0;
@@ -162,17 +157,16 @@
     }
 }
 
-.works article:hover .project-picture {
+.works a:hover .project-picture {
     animation: shake 0.5s ease-in-out;
 }
 
-.works article:hover {
+.works a:hover {
     animation: shake 0.5s ease-in-out;
 }
-
 
 @media (max-width: 1020px) {
-    [id="projects"] .works article {
+    [id="projects"] .works a {
         width: calc(100% - 1.3rem);
         margin: 0 3rem;
     }
@@ -180,5 +174,51 @@
     [id="projects"] figure {
         width: 100%;
         height: 50px;
+        margin: 0;
     }
+}
+
+@media (max-width: 768px) {
+    [id="projects"] .works a {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    [id="projects"] {
+        max-width: 1530px;
+    }
+
+    [id="projects"] h1 {
+        font-size: 4rem;
+    }
+
+    [id="projects"] p {
+        font-size: 1.5rem;
+        max-width: 1530px;
+    }
+
+    [id="projects"] .works {
+        padding: 0 2rem;
+        max-width: 200rem;
+    }
+
+    [id="projects"] .langagesBox {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    [id="projects"] article p {
+        font-size: 1.5rem;
+    }
+
+    [id="projects"] .button {
+        width: 250px;
+        height: 80px;
+        font-size: 1.5rem;
+        padding: 25px;
+    }
+
 }

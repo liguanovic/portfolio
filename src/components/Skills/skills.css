@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-[id=skills] section article {
+[id=skills] article {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -24,6 +24,7 @@
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     background: rgb(50, 50, 50);
+    width: 70%;
 }
 
 [id=skills] h1 {
@@ -77,10 +78,11 @@
         text-align: start;
     }
 
-    [id=skills] section article {
+    [id=skills] article {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
 
     [id=skills] img {
@@ -94,5 +96,35 @@
     [id=skills] p {
         text-align: center;
         font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    [id=skills] {
+        max-width: 1530px;
+    }
+
+    [id=skills] h1 {
+        font-size: 4rem;
+    }
+
+    [id=skills] p {
+        font-size: 1.5rem;
+        max-width: 1530px;
+    }
+
+    [id=skills] img {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    [id=skills] article {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    [id=skills] ul {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
     }
 }

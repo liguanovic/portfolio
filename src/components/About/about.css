@@ -49,5 +49,18 @@
         font-size: 1.2rem;
         text-align: center;
     }
+}
 
+@media (min-width: 1536px) {
+    [id="about"] {
+        max-width: 1350px;
+    }
+
+    [id="about"] h1 {
+        font-size: 4rem;
+    }
+
+    [id="about"] p {
+        font-size: 1.5rem;
+    }
 }

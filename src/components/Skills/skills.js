@@ -20,23 +20,21 @@ const Skills = ({ competences }) => {
                 <p>{Data.presentation}</p>
             </header>
 
-            <section>
-                {competences.map((competence, index) => (
-                    <article key={index}>
-                        <figure>
-                            <img src={logos[competence.titre]} alt={competence.texteAlternatif} />
-                        </figure>
-                        <section>
-                            <h2>{competence.titre}</h2>
-                            <ul>
-                                {competence.listeCompetences.map((item, idx) => (
-                                    <li key={idx}>{item.description} {item.miseEnValeur && <strong>{item.miseEnValeur}</strong>} {item.contexte}</li>
-                                ))}
-                            </ul>
-                        </section>
-                    </article>
-                ))}
-            </section>
+            {competences.map((competence, index) => (
+                <article key={index}>
+                    <figure>
+                        <img src={logos[competence.titre]} alt={competence.texteAlternatif} />
+                    </figure>
+                    <section>
+                        <h2>{competence.titre}</h2>
+                        <ul>
+                            {competence.listeCompetences.map((item, idx) => (
+                                <li key={idx}>{item.description} {item.miseEnValeur && <strong>{item.miseEnValeur}</strong>} {item.contexte}</li>
+                            ))}
+                        </ul>
+                    </section>
+                </article>
+            ))}
         </section>
     );
 }

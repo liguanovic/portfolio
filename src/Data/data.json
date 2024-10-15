@@ -114,7 +114,6 @@
       "langages": 
         ["HTML", "CSS"],
       "description" : "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-      "color" : "#FFFEF8",
       "link": "https://github.com/liguanovic/booki-starter-code"
     },
     {
@@ -122,7 +121,6 @@
       "pictures": { "src":"/assets/pictures/ohmyfood.png", "alt":"OhMyFood"},
       "langages": ["HTML", "CSS"],
       "description" : "Améliorez l'interface d'un site mobile avec des animations CSS",
-      "color" : "#FFFEF8",
       "link": "https://github.com/liguanovic/ocr-ohmyfood"
     },
     {
@@ -130,7 +128,6 @@
       "pictures": { "src":"/assets/pictures/kasa.png", "alt":"Kasa"},
       "langages": ["React", "HTML", "CSS"],
       "description" : "Créez une application web de location immobilière avec React",
-      "color" : "#FFFEF8",
       "link": "https://github.com/liguanovic/kasa"
     },
     {
@@ -138,7 +135,6 @@
       "pictures": { "src":"/assets/pictures/sophiebluel.png", "alt":"OhMyFood"},
       "langages": ["HTML", "CSS", "JavaScript"],
       "description" : "Créez une page web dynamique avec JavaScript",
-      "color" : "#FFFEF8",
       "link": "https://github.com/liguanovic/archiwebos"
     },
     {
@@ -146,7 +142,6 @@
       "pictures": { "src":"/assets/pictures/argentBankLogo.png", "alt":"argentBank"},
       "langages": ["React", "HTML", "CSS", "JavaScript"],
       "description" : "Implémentez le front-end d'une application bancaire avec React",
-      "color" : "#FFFEF8",
       "link": "https://github.com/liguanovic/argentBank"
     }
   ]
