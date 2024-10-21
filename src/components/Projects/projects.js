@@ -7,20 +7,19 @@ const Projects = () => {
     return (
         <section id="projects">
             <header>
-                <h1>Mon Portfolio</h1>
+                <h2>Mon Portfolio</h2>
                 <p>{Data.presentationProjet}</p>
             </header>
             <article className="works">
                 {Data.projects.map((project, index) => (
                     <a key={index} href={project.link} target="_blank" rel="noopener noreferrer">
                         <FaGithub className="githubIcon" aria-label="Lien vers le dépôt GitHub" />
-                        <figure>
+                        <h3>
                             <img
                                 src={`${process.env.PUBLIC_URL}${project.pictures.src}`}
                                 alt={project.pictures.alt}
-                                className="project-picture"
                             />
-                        </figure>
+                        </h3>
                         <ul className="langages">
                             {project.langages.map((langage, langIndex) => (
                                 <li key={langIndex} className="langagesBox">{langage}</li>

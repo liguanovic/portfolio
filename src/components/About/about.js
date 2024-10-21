@@ -1,6 +1,5 @@
 import './about.css';
 
-
 const About = () => {
     return (
         <section id="about">
@@ -14,6 +13,5 @@ const About = () => {
         </section>
     );
 }
-
 
 export default About;
